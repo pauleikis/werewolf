@@ -1,0 +1,9 @@
+analyse.py is intended to:
+1. Be run by cron to update graphs every night
+2. Be called from service to forcefully update graphs
+
+1.
+    analyse.py
+2.
+    from analyzer import update
+    update()
