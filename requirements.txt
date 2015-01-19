@@ -1,0 +1,5 @@
+Flask
+arrow
+ipython
+pandas
+plotly
