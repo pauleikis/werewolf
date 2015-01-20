@@ -11,4 +11,4 @@ app.config.from_envvar('WEREWOLF_SETTINGS', silent=True)
 app.register_blueprint(ww)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run()
