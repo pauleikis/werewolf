@@ -1,5 +1,5 @@
 from flask import Flask
-from web.ww.index import ww
+from ww.index import ww
 
 
 app = Flask(__name__)
