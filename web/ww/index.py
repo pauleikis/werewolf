@@ -8,8 +8,11 @@ ww = Blueprint(
 )
 
 
-ROLES = list(map(str.strip, open("ww/data/roles").readlines()))
-PLAYERS = list(map(str.strip, open("ww/data/players").readlines()))
+ROLES = list(map(str.strip,
+                 open("ww/data/roles", encoding="utf-8").readlines()))
+
+PLAYERS = list(map(str.strip,
+                   open("ww/data/players", encoding="utf-8").readlines()))
 
 
 @ww.route("/")
