@@ -1,0 +1,20 @@
+[; extends "base.html" ;]
+
+[; block includes ;]
+<script src="[[url_for('static', filename='js/new_game.js')]]"></script>
+[; endblock ;]
+
+[; block content ;]
+<div ng-app="werewolfGame" ng-controller="RoleCtrl" class="row">
+    <ul id="allRoles" class="list-group col-xs-6 sortable">
+        [; for role in roles ;]
+        <li class="list-group-item">[[ role ]]</li>
+        [; endfor ;]
+    </ul>
+    <ul id="selectedRoles" class="list-group col-xs-6 sortable">
+    </ul>
+</div>
+[; endblock ;]
+
+[; block discus ;]
+[; endblock ;]
